@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<MDG.Technology version="1.0"><Documentation id="LGIT-Profile" name="LGIT UML Profile" version="1.2" notes="LGIT UML Profile" infoURI="http://wiki.lginnotek.com/conf/display/LISA/LGIT+Model+Based+Design+Guide" supportURI="ibkim@lginnotek.com"/><UMLProfiles><UMLProfile profiletype="uml2">
+			<Documentation id="8156B2B4-F" name="LGIT Model" version="1.0" notes="LGIT Model"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="SwChoice" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Choice"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="SwComponent" metatype="_SwComponent" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Class">
+								<Property name="isActive" value=""/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SwD_ID" type="" description="" unit="" values="" default="SwCP-"/>
+							<Tag name="ASIL" type="enumeration" description="" unit="" values="N/A,A,B,C,D" default=""/>
+							<Tag name="UsageType" type="enumeration" description="" unit="" values="New,Reuse with modification,Reuse without modification,COTS" default="New"/>
+							<Tag name="Verification Criteria" type="" description="" unit="" values="" default=""/>
+							<Tag name="FromSysRF_ID"/>
+							<Tag name="FromSysRNF_ID"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="SwConstraint" metatype="SwConstraint" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Class">
+								<Property name="_Tag" value="1"/>
+								<Property name="isActive" value=""/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="Verification Criteria" type="" description="" unit="" values="" default=""/>
+							<Tag name="SwR_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="Rationale" type="" description="" unit="" values="" default=""/>
+							<Tag name="From SysR_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="From SysD_ID" type="" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="SwFinal" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="FinalState"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="SwInitial" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="InitialState"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="SwState" metatype="_SwState" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="State">
+								<Property name="isComposite" value=""/>
+								<Property name="isOrthogonal" value=""/>
+								<Property name="isSimple" value=""/>
+								<Property name="isSubmachineState" value=""/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SwD_ID" type="" description="" unit="" values="" default="SwST-"/>
+							<Tag name="SafeState" type="enumeration" description="" unit="" values="YES,NO" default="NO"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="SwTask" metatype="_SwTask" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Class">
+								<Property name="isActive" value="true"/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SwD_ID" type="" description="" unit="" values="" default="SwTS-"/>
+							<Tag name="Verification Criteria" type="" description="" unit="" values="" default=""/>
+							<Tag name="ASIL" type="enumeration" description="" unit="" values="N/A,A,B,C,D" default=""/>
+							<Tag name="Constraints" type="" description="" unit="" values="" default=""/>
+							<Tag name="Deadline" type="" description="" unit="" values="" default=""/>
+							<Tag name="Period" type="" description="" unit="" values="" default="0"/>
+							<Tag name="Priority" type="" description="" unit="" values="" default="0"/>
+							<Tag name="FromSysRF_ID"/>
+							<Tag name="FromSysRNF_ID"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="SwTerminate" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Terminate"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="SwTransition" metatype="_SwTransition" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Transition">
+								<Property name="_lineStyle" value="auto"/>
+								<Property name="direction" value="Source -&gt; Destination"/>
+								<Property name="isEffect" value="false"/>
+								<Property name="kind" value=""/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SwD_ID" type="" description="" unit="" values="" default="SwTR-"/>
+							<Tag name="Action Note" type="" description="" unit="" values="" default=""/>
+							<Tag name="Condition Note" type="" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="bus" metatype="Bus" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Image type="EAShapeScript 1.0" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">UEsDBBQAAAAIANJbdUlB4+6IwQAAAFgCAAAHABEAc3RyLmRhdFVUDQAH8doyWPHaMljx2jJY
+lZHNCsIwEITnquA7lHpRUFB6FB+m2krFNJU26kF8d2e3PxJoUCmbbrPfTDbbBgVSXJEjQsns
+DIsnZphighoVHPckDjDK7BmOlRu/dh1nyTXqkzF7BKh2bbjjcOI5hs+RvGHUWGCDVRfLQdPS
+0p39yvYK6bZWlXRekP4wJfV39aw6l8jzMHp/v75GEiS2ZP6hwsxvdf8UmUo2es9+vqkSMhP5
+lxcqxujQbBJvNld6SEeOvpZEjDnfKXU5s3ggX7q+AVBLAQIXCxQAAAAIANJbdUlB4+6IwQAA
+AFgCAAAHAAkAAAAAAAAAAAAAgAAAAABzdHIuZGF0VVQFAAfx2jJYUEsFBgAAAAABAAEAPgAA
+APcAAAAAAA==</Image>
+						<AppliesTo>
+							<Apply type="Node">
+								<Property name="_HideStype" value="target system, external system"/>
+								<Property name="isExecutionEnvironment" value="false"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="component" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Component">
+								<Property name="isIndirectlyInstantiated" value="true"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="configuration parameter" metatype="Configuration Param" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////AAAAAAAA////////////AAAAAAAA////////////AAAAAAAA////////////////
+AAAAAAAA////////////AAAAAAAA////////////AAAAAAAA////////////////AAAAAAAA
+////////////AAAAAAAA////////////AAAAAAAA////////////////AAAAAAAA////////
+Ly8vAAAAAAAALy8v////////AAAAAAAA////////////////AAAAAAAA////////AAAA////
+////AAAA////////AAAAAAAA////////////////AAAAAAAA////////AAAA////////AAAA
+////////AAAAAAAA////////////////AAAAAAAA////////Ly8vAAAAAAAAMDAw////////
+AAAAAAAA////////////////AAAAAAAA////////////AAAAAAAA////////////AAAAAAAA
+////////////////AAAAAAAA////////////AAAAAAAA////////////AAAAAAAA////////
+////Ly8vAAAAAAAALy8v////////AAAAAAAA////////Ly8vAAAAAAAALy8v////////AAAA
+////////AAAA////////AAAAAAAA////////AAAA////////AAAA////////AAAA////////
+AAAA////////AAAAAAAA////////AAAA////////AAAA////////Ly8vAAAAAAAAMDAw////
+////AAAAAAAA////////Ly8vAAAAAAAAMDAw////////////AAAAAAAA////////////AAAA
+AAAA////////////AAAAAAAA////////////////AAAAAAAA////////////AAAAAAAA////
+////////AAAAAAAA////////////////AAAAAAAA////////////AAAAAAAA////////////
+AAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+						<AppliesTo>
+							<Apply type="Requirement">
+								<Property name="_Tag" value="1"/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SwR_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="ASIL" type="enumeration" description="" unit="" values="N/A,A,B,C,D" default=""/>
+							<Tag name="Value Range" type="" description="" unit="" values="" default=""/>
+							<Tag name="Meaning of value" type="" description="" unit="" values="" default=""/>
+							<Tag name="Application method" type="" description="" unit="" values="" default=""/>
+							<Tag name="Rationale" type="" description="" unit="" values="" default=""/>
+							<Tag name="Priority" type="enumeration" description="" unit="" values="P1,P2,P3,P4" default=""/>
+							<Tag name="From SysR_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="From SysE_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="Status" type="enumeration" description="" unit="" values="Proposed,Reviewed,Assumed,Accepted" default=""/>
+							<Tag name="Verification Criteria" type="" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="control path" metatype="Control Path" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="CommunicationPath">
+								<Property name="_lineStyle" value="auto"/>
+								<Property name="direction" value="Source -&gt; Destination"/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SwR_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="Input/Output" type="enumeration" description="" unit="" values="IN,OUT,INOUT" default=""/>
+							<Tag name="Range" type="string" description="" unit="" values="" default=""/>
+							<Tag name="HSI_ID" type="string" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="data path" metatype="Data Path" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="CommunicationPath">
+								<Property name="_lineStyle" value="auto"/>
+								<Property name="direction" value="Source -&gt; Destination"/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SwR_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="Input/Output" type="enumeration" description="" unit="" values="IN,OUT,INOUT" default=""/>
+							<Tag name="Range" type="string" description="" unit="" values="" default=""/>
+							<Tag name="HSI_ID" type="string" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="event path" metatype="Event Path" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="CommunicationPath">
+								<Property name="_lineStyle" value="auto"/>
+								<Property name="direction" value="Source -&gt; Destination"/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SwR_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="Input/Output" type="enumeration" description="" unit="" values="IN,OUT,INOUT" default=""/>
+							<Tag name="Range" type="string" description="" unit="" values="" default=""/>
+							<Tag name="HSI_ID" type="string" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="external system" metatype="External System" notes="" cx="80" cy="100" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Node">
+								<Property name="_HideStype" value="target system, external system"/>
+								<Property name="isExecutionEnvironment" value="false"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="functional" metatype="Functional" notes="Pre-condition:&#xA;&lt;ol&gt;&#xA;	&lt;li&gt;#1&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;Input:&#xA;&lt;ol&gt;&#xA;	&lt;li&gt;#1&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;Sequence:&#xA;&lt;ol&gt;&#xA;	&lt;li&gt;#1&lt;/li&gt;&#xA;	&lt;li&gt;#2&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;Output:&#xA;" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Requirement">
+								<Property name="_Tag" value="1"/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SwR_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="ASIL" type="enumeration" description="" unit="" values="N/A,A,B,C,D" default="N/A"/>
+							<Tag name="Rationale" type="" description="" unit="" values="" default=""/>
+							<Tag name="Priority" type="enumeration" description="" unit="" values="P1,P2,P3,P4" default=""/>
+							<Tag name="Risk" type="enumeration" description="" unit="" values="High,Medium,Low" default=""/>
+							<Tag name="From SysR_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="From SysE_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="Status" type="enumeration" description="" unit="" values="Proposed,Reviewed,Assumed,Accepted" default=""/>
+							<Tag name="Verification Criteria" type="" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="non-functional" metatype="Non-functional" notes="Related Functional Requirement:&#xA;&lt;ol&gt;&#xA;	&lt;li&gt;#1&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;Response:&#xA;&lt;ol&gt;&#xA;	&lt;li&gt;#1&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;Response Measure:&#xA;&lt;ol&gt;&#xA;	&lt;li&gt;#1&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&#xA;" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Requirement">
+								<Property name="_Tag" value="1"/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SwR_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="ASIL" type="enumeration" description="" unit="" values="N/A,A,B,C,D" default=""/>
+							<Tag name="Classification" type="" description="" unit="" values="" default=""/>
+							<Tag name="Rationale" type="" description="" unit="" values="" default=""/>
+							<Tag name="Priority" type="enumeration" description="" unit="" values="P1,P2,P3,P4" default=""/>
+							<Tag name="From SysR_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="From SysE_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="Status" type="enumeration" description="" unit="" values="Proposed,Reviewed,Assumed,Accepted" default=""/>
+							<Tag name="Verification Criteria" type="" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="power path" metatype="Power Path" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="CommunicationPath">
+								<Property name="_lineStyle" value="auto"/>
+								<Property name="direction" value="Source -&gt; Destination"/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="HSI_ID" type="string" description="" unit="" values="" default=""/>
+							<Tag name="Input/Output" type="enumeration" description="" unit="" values="IN,OUT,INOUT" default=""/>
+							<Tag name="Range" type="string" description="" unit="" values="" default=""/>
+							<Tag name="SwR_ID" type="" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="signal path" metatype="Signal Path" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="CommunicationPath">
+								<Property name="_lineStyle" value="auto"/>
+								<Property name="direction" value="Source -&gt; Destination"/>
+							</Apply>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="SwR_ID" type="" description="" unit="" values="" default=""/>
+							<Tag name="Input/Output" type="enumeration" description="" unit="" values="IN,OUT,INOUT" default=""/>
+							<Tag name="Range" type="string" description="" unit="" values="" default=""/>
+							<Tag name="HSI_ID" type="string" description="" unit="" values="" default=""/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="subsystem" metatype="Subsystem" notes="" cx="100" cy="100" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Node">
+								<Property name="_HideStype" value="target system, external system"/>
+								<Property name="isExecutionEnvironment" value="false"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="target system" metatype="Target System" notes="" cx="200" cy="300" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Node">
+								<Property name="_HideStype" value="target system, external system"/>
+								<Property name="isExecutionEnvironment" value="false"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes>
+					<TaggedValueType property="FromSysRF_ID" description="" notes="Type=RefGUIDList;Stereotypes=functional;"/>
+					<TaggedValueType property="FromSysRNF_ID" description="" notes="Type=RefGUIDList;Stereotypes=non-functional;"/>
+				</TaggedValueTypes>
+				<QuickLink data="&#xA;// Software Context Model&#xA;// Create link and element (External System Linker)&#xA;Node,LGIT Model::target system,,,,LGIT Model::external system,,CommunicationPath,data path,bidirectional,,Data path,TRUE,TRUE,TRUE,TRUE,External System,0,,,,TRUE,&#xA;Node,LGIT Model::target system,,,,LGIT Model::external system,,CommunicationPath,control path,bidirectional,,Control path,TRUE,TRUE,TRUE,TRUE,External System,0,,,,TRUE,&#xA;Node,LGIT Model::target system,,,,LGIT Model::external system,,CommunicationPath,signal path,bidirectional,,Signal path,TRUE,TRUE,TRUE,TRUE,External System,0,,,,TRUE,&#xA;Node,LGIT Model::target system,,,,LGIT Model::external system,,CommunicationPath,event path,bidirectional,,Event path,TRUE,TRUE,TRUE,TRUE,External System,0,,,,TRUE,&#xA;Node,LGIT Model::target system,,,,LGIT Model::external system,,CommunicationPath,power path,bidirectional,,Power path,TRUE,TRUE,TRUE,TRUE,External System,0,,,,TRUE,&#xA;&#xA;// Create link and element (Component Linker)&#xA;Node,LGIT Model::target system,,,,LGIT Model::component,,CommunicationPath,data path,bidirectional,,Data path,TRUE,TRUE,TRUE,TRUE,Component,0,,,,TRUE,&#xA;Node,LGIT Model::target system,,,,LGIT Model::component,,CommunicationPath,control path,bidirectional,,Control path,TRUE,TRUE,TRUE,TRUE,Component,0,,,,TRUE,&#xA;Node,LGIT Model::target system,,,,LGIT Model::component,,CommunicationPath,signal path,bidirectional,,Signal path,TRUE,TRUE,TRUE,TRUE,Component,0,,,,TRUE,&#xA;Node,LGIT Model::target system,,,,LGIT Model::component,,CommunicationPath,event path,bidirectional,,Event path,TRUE,TRUE,TRUE,TRUE,Component,0,,,,TRUE,&#xA;Node,LGIT Model::target system,,,,LGIT Model::component,,CommunicationPath,power path,bidirectional,,Power path,TRUE,TRUE,TRUE,TRUE,Component,0,,,,TRUE,&#xA;&#xA;// Create link&#xA;Node,LGIT Model::target system,Node,LGIT Model::external system,,,,CommunicationPath,data path,bidirectional,Create data path,,TRUE,,TRUE,TRUE,,0,,,,,&#xA;Node,LGIT Model::target system,Node,LGIT Model::external system,,,,CommunicationPath,control path,bidirectional,Create control path,,TRUE,,TRUE,TRUE,,0,,,,,&#xA;Node,LGIT Model::target system,Node,LGIT Model::external system,,,,CommunicationPath,signal path,bidirectional,Create signal path,,TRUE,,TRUE,TRUE,,0,,,,,&#xA;Node,LGIT Model::target system,Node,LGIT Model::external system,,,,CommunicationPath,event path,bidirectional,Create event path,,TRUE,,TRUE,TRUE,,0,,,,,&#xA;Node,LGIT Model::target system,Node,LGIT Model::external system,,,,CommunicationPath,power path,bidirectional,Create power path,,TRUE,,TRUE,TRUE,,0,,,,,&#xA;&#xA;Node,LGIT Model::target system,Component,LGIT Model::component,,,,CommunicationPath,data path,bidirectional,Create data path,,TRUE,,TRUE,TRUE,,0,,,,,&#xA;Node,LGIT Model::target system,Component,LGIT Model::component,,,,CommunicationPath,control path,bidirectional,Create control path,,TRUE,,TRUE,TRUE,,0,,,,,&#xA;Node,LGIT Model::target system,Component,LGIT Model::component,,,,CommunicationPath,signal path,bidirectional,Create signal path,,TRUE,,TRUE,TRUE,,0,,,,,&#xA;Node,LGIT Model::target system,Component,LGIT Model::component,,,,CommunicationPath,event path,bidirectional,Create event path,,TRUE,,TRUE,TRUE,,0,,,,,&#xA;Node,LGIT Model::target system,Component,LGIT Model::component,,,,CommunicationPath,power path,bidirectional,Create power path,,TRUE,,TRUE,TRUE,,0,,,,,&#xA;&#xA;// Software Constraint Model&#xA;// Create link and element&#xA;Class,LGIT Model::SwConstraint,,,,LGIT Model::rationale,,Dependency,,to,,Rationale,TRUE,TRUE,TRUE,TRUE,Constraint,0,,,,TRUE,&#xA;Class,LGIT Model::SwConstraint,,,,LGIT Model::verification criteria,,Dependency,,to,,Verification Criteria,TRUE,TRUE,TRUE,TRUE,Constraint,0,,,,TRUE,&#xA;&#xA;// Create link&#xA;Class,LGIT Model::SwConstraint,Class,LGIT Model::rationale,,,,Dependency,,to,Dependency to,,TRUE,,TRUE,TRUE,,0,,,,,&#xA;Class,LGIT Model::SwConstraint,Class,LGIT Model::verification criteria,,,,Dependency,,to,Dependency to,,TRUE,,TRUE,TRUE,,0,,,,,&#xA;&#xA;// Software State Definition&#xA;// Create link and element&#xA;State,LGIT Model::SwState,,,,State,SwState,Transition,SwTransition,to,,Create State,TRUE,TRUE,TRUE,TRUE,States,0,,,,TRUE,&#xA;State,LGIT Model::SwState,,,,FinalState,SwFinal,Transition,SwTransition,to,,Create Final State,TRUE,TRUE,TRUE,TRUE,States,0,,,,TRUE,&#xA;&#xA;State,LGIT Model::SwState,,,,Choice,SwChoice,Transition,SwTransition,to,,Create Choice State,TRUE,TRUE,TRUE,TRUE,States,0,,,,TRUE,&#xA;State,LGIT Model::SwState,,,,Terminate,SwTerminate,Transition,SwTransition,to,,Create Terminate State,TRUE,TRUE,TRUE,TRUE,States,0,,,,TRUE,&#xA;&#xA;Choice,LGIT Model::SwChoice,,,,State,SwState,Transition,SwTransition,to,,Create State Transition,TRUE,TRUE,TRUE,TRUE,States,0,,,,TRUE,&#xA;Choice,LGIT Model::SwChoice,,,,Terminate,SwTerminate,Transition,SwTransition,to,,Create Terminate State,TRUE,TRUE,TRUE,TRUE,States,0,,,,TRUE,&#xA;Choice,LGIT Model::SwChoice,,,,FinalState,SwFinal,Transition,SwTransition,to,,Create Final State,TRUE,TRUE,TRUE,TRUE,States,0,,,,TRUE,&#xA;Choice,LGIT Model::SwChoice,,,,Choice,SwChoice,Transition,SwTransition,to,,Create Choice State,TRUE,TRUE,TRUE,TRUE,States,0,,,,TRUE,&#xA;&#xA;InitialState,LGIT Model::SwInitial,,,,State,SwState,Transition,SwTransition,to,,Create State Transition,TRUE,TRUE,TRUE,TRUE,States,0,,,,TRUE,&#xA;InitialState,LGIT Model::SwInitial,,,,Terminate,SwTerminate,Transition,SwTransition,to,,Create Terminate State,TRUE,TRUE,TRUE,TRUE,States,0,,,,TRUE,&#xA;InitialState,LGIT Model::SwInitial,,,,FinalState,SwFinal,Transition,SwTransition,to,,Create Final State,TRUE,TRUE,TRUE,TRUE,States,0,,,,TRUE,&#xA;InitialState,LGIT Model::SwInitial,,,,Choice,SwChoice,Transition,SwTransition,to,,Create Choice State,TRUE,TRUE,TRUE,TRUE,States,0,,,,TRUE,&#xA;&#xA;&#xA;// Create Link&#xA;// State &lt;-&gt; State&#xA;State,LGIT Model::SwState,State,LGIT Model::SwState,,,,Transition,LGIT Model::SwTransition,to,Create Transition,,TRUE,,TRUE,TRUE,Transition,0,,,,,&#xA;// State &lt;-&gt; Initial State&#xA;State,LGIT Model::SwState,InitialState,LGIT Model::SwInitial,,,,Transition,LGIT Model::SwTransition,to,Create Transition,,TRUE,,TRUE,TRUE,Transition,0,,,,,&#xA;InitialState,LGIT Model::SwInitial,State,LGIT Model::SwState,,,,Transition,LGIT Model::SwTransition,to,Create Transition,,TRUE,,TRUE,TRUE,Transition,0,,,,,&#xA;&#xA;// State &lt;-&gt; Choice&#xA;State,LGIT Model::SwState,Choice,LGIT Model::SwChoice,,,,Transition,LGIT Model::SwTransition,to,Create Transition,,TRUE,,TRUE,TRUE,Transition,0,,,,,&#xA;Choice,LGIT Model::SwChoice,State,LGIT Model::SwState,,,,Transition,LGIT Model::SwTransition,to,Create Transition,,TRUE,,TRUE,TRUE,Transition,0,,,,,&#xA;&#xA;// State &lt;-&gt; FinalState&#xA;State,LGIT Model::SwState,FinalState,LGIT Model::SwFinal,,,,Transition,LGIT Model::SwTransition,to,Create Transition,,TRUE,,TRUE,TRUE,Transition,0,,,,,&#xA;FinalState,LGIT Model::SwFinal,State,LGIT Model::SwState,,,,Transition,LGIT Model::SwTransition,to,Create Transition,,TRUE,,TRUE,TRUE,Transition,0,,,,,&#xA;&#xA;// State &lt;-&gt; Terminate&#xA;State,LGIT Model::SwState,Terminate,LGIT Model::SwTerminate,,,,Transition,LGIT Model::SwTransition,to,Create Transition,,TRUE,,TRUE,TRUE,Transition,0,,,,,&#xA;Terminate,LGIT Model::SwTerminate,State,LGIT Model::SwState,,,,Transition,LGIT Model::SwTransition,to,Create Transition,,TRUE,,TRUE,TRUE,Transition,0,,,,,&#xA;"/>
+			</Content>
+		</UMLProfile>
+	</UMLProfiles><TaggedValueTypes><RefData version="1.0" exporter="EA.25">
+			<DataSet name="Property Types" table="t_propertytypes" filter="Property='#Property#'"><DataRow><Column name="Property" value="SwR_ID"/><Column name="Description" value="Software Requirement ID"/><Column name="Notes" value="Type=String;&#xA;Default=SwRQ_;"/></DataRow><DataRow><Column name="Property" value="Rationale"/><Column name="Description" value="&#44540;&#44144;"/><Column name="Notes" value="Type=Memo;"/></DataRow><DataRow><Column name="Property" value="From SysR_ID"/><Column name="Description" value="System Requirement ID"/><Column name="Notes" value="Type=String;&#xA;Default=SysR_;"/></DataRow><DataRow><Column name="Property" value="From SysD_ID"/><Column name="Description" value="System Design ID"/><Column name="Notes" value="Type=String;&#xA;Default=SysD_;"/></DataRow><DataRow><Column name="Property" value="Verification Criteria"/><Column name="Description" value="&#53580;&#49828;&#53944; &#48169;&#48277;"/><Column name="Notes" value="Type=Memo;"/></DataRow><DataRow><Column name="Property" value="From SysE_ID"/><Column name="Description" value="System Element ID"/><Column name="Notes" value="Type=String;&#xA;Default=SysE_;"/></DataRow><DataRow><Column name="Property" value="IsSafety"/><Column name="Description" value="Safety Requirement &#50668;&#48512;"/><Column name="Notes" value="Type=Boolean;&#xA;Default=False;"/></DataRow><DataRow><Column name="Property" value="Classification"/><Column name="Description" value="&#50836;&#44396;&#49324;&#54637; &#49549;&#49457;"/><Column name="Notes" value="Type=Memo;"/></DataRow><DataRow><Column name="Property" value="State_ID"/><Column name="Description" value="Software State ID"/><Column name="Notes" value="Type=String;&#xA;Default=SwST_;"/></DataRow><DataRow><Column name="Property" value="SafeState"/><Column name="Notes" value="Type=Enum;&#xA;Values=NO, YES;&#xA;Default=NO;"/></DataRow><DataRow><Column name="Property" value="Action Note"/><Column name="Notes" value="Type=Memo;"/></DataRow><DataRow><Column name="Property" value="Condition Note"/><Column name="Notes" value="Type=Memo;"/></DataRow><DataRow><Column name="Property" value="Constraints"/><Column name="Description" value="&#51228;&#50557;&#49324;&#54637;"/><Column name="Notes" value="Type=Memo;"/></DataRow><DataRow><Column name="Property" value="SwD_ID"/><Column name="Description" value="Software Design ID"/><Column name="Notes" value="Type=String;&#xA;Default=SwD_;"/></DataRow></DataSet></RefData></TaggedValueTypes><Images><RefData version="1.0" exporter="EA.25">
+		</RefData></Images><DiagramProfile><UMLProfile profiletype="uml2">
+			<Documentation id="73EDDF94-B" name="LGIT Model" version="1.0" notes="LGIT Model"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="Requirements" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Diagram_Logical">
+								<Property name="alias" value="SW Requirements"/>
+								<Property name="pdata" value="HideStereo=1;OpParams=1;SuppCN=1;ShowTags=0;HideParents=0;"/>
+								<Property name="toolbox" value="SW Requirement"/>
+								<Property name="styleex" value="SuppConnectorLabels=0;HideConnStereotype=0;AdvancedConnectorProps=1;HandDraw=0;Whiteboard=0;AdvancedFeatureProps=1;VisibleAttributeDetail=0;TExplicitNavigability=1;TConnectorNotation=UML 2.1;ShowNotes=0;"/>
+								<Property name="diagramID" value="Requirement"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="Software Component" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Diagram_SwComponent">
+								<Property name="alias" value="Software Component"/>
+								<Property name="diagramID" value="SwComponent"/>
+								<Property name="pdata" value="OpParams=1;SuppCN=1;ShowTags=0;HideStereo=1;HideParents=0;"/>
+								<Property name="styleex" value="SuppConnectorLabels=0;HideConnStereotype=0;AdvancedConnectorProps=1;HandDraw=0;Whiteboard=0;VisibleAttributeDetail=0;TExplicitNavigability=1;TConnectorNotation=UML 2.1;ShowNotes=0;AdvancedFeatureProps=1;"/>
+								<Property name="toolbox" value="Software Component"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="Software Constraints" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Diagram_Component">
+								<Property name="pdata" value="OpParams=1;SuppCN=1;ShowTags=0;HideStereo=1;HideParents=0;"/>
+								<Property name="styleex" value="SuppConnectorLabels=0;HideConnStereotype=0;AdvancedConnectorProps=1;HandDraw=0;Whiteboard=0;VisibleAttributeDetail=0;TExplicitNavigability=1;TConnectorNotation=UML 2.1;ShowNotes=0;AdvancedFeatureProps=1;"/>
+								<Property name="alias" value="Software Constraints"/>
+								<Property name="diagramID" value="Constraints"/>
+								<Property name="toolbox" value="Software Constraints"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="Software Context" notes="Software Context Diagram" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Diagram_Component">
+								<Property name="pdata" value="OpParams=1;SuppCN=1;ShowTags=0;HideStereo=1;HideParents=0;"/>
+								<Property name="styleex" value="SuppConnectorLabels=0;HideConnStereotype=0;AdvancedConnectorProps=1;HandDraw=0;Whiteboard=0;TExplicitNavigability=1;TConnectorNotation=UML 2.1;ShowNotes=0;AdvancedFeatureProps=1;VisibleAttributeDetail=1;"/>
+								<Property name="alias" value="Software Context"/>
+								<Property name="diagramID" value="Context"/>
+								<Property name="toolbox" value="Software Context"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="States" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="Diagram_States">
+								<Property name="alias" value="Software States"/>
+								<Property name="diagramID" value="State Machine"/>
+								<Property name="pdata" value="OpParams=1;SuppCN=1;ShowTags=0;HideStereo=1;HideParents=0;"/>
+								<Property name="styleex" value="SuppConnectorLabels=0;HideConnStereotype=0;AdvancedConnectorProps=1;HandDraw=0;Whiteboard=0;TExplicitNavigability=1;TConnectorNotation=UML 2.1;ShowNotes=0;AdvancedFeatureProps=1;VisibleAttributeDetail=1;"/>
+								<Property name="toolbox" value="SW States"/>
+							</Apply>
+						</AppliesTo>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+			</Content>
+		</UMLProfile>
+	</DiagramProfile><UIToolboxes><UMLProfile profiletype="uml2">
+			<Documentation id="B743E054-9" name="Software Component" version="1.0" notes="Software Component"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="Component Elements" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="LGIT Model::SwComponent(UML::Class)" type="" description="" unit="" values="" default="Component"/>
+							<Tag name="LGIT Model::SwTask(UML::Class)" type="" description="" unit="" values="" default="Task"/>
+							<Tag name="UML::Package" type="" description="" unit="" values="" default="Package"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="Component Links" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="LGIT Model::SwComponent(UML::Class)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////////////////////j4+PHx8fj4+P////////////////////////////////////
+////////39/fPz8/QEBAAAAAQEBAPz8/39/f////////////////////////////////j4+P
+Hx8fkJCQ////AAAA////j4+PHx8fj4+P////////////////////39/fPz8/QEBA39/f////
+////AAAA////////39/fQEBAPz8/39/f////////j4+PHx8fkJCQ////////////////AAAA
+////////////////j4+PHx8fj4+P////AAAALy8v39/f////////39/fPz8/ICAgPz8/39/f
+////////39/fLy8vAAAA////AAAAj4+PHx8fj4+Pj4+PHx8fkJCQ////j4+PHx8fj4+Pj4+P
+Hx8fkJCQAAAA////AAAA////v7+/AAAAAAAAv7+/////////////v7+/AAAAAAAAv7+/////
+AAAA////AAAAj4+PHx8fkJCQj4+PHx8fj4+P////j4+PHx8fkJCQj4+PHx8fj4+PAAAA////
+AAAAMDAw39/f////////39/fQEBAHx8fQEBA39/f////////39/fMDAwAAAA////j4+PHx8f
+j4+P////////////////AAAA////////////////j4+PHx8fkJCQ////////39/fQEBAPz8/
+39/f////////AAAA////////39/fPz8/QEBA39/f////////////////////j4+PHx8fj4+P
+////AAAA////j4+PHx8fkJCQ////////////////////////////////39/fQEBAPz8/AAAA
+Pz8/QEBA39/f////////////////////////////////////////////j4+PICAgkJCQ////
+////////////////////////////////////////////////////////////////////////
+////////////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAA0ADMAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="LGIT Model::SwTask(UML::Class)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+v7+/Hx8fHx8fv7+/////////////////////////////////////////////////Dw8PAAAA
+AAAAHx8f////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHx8fAAAAAAAAICAg
+////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv7+/ICAgICAgv7+/////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////v7+/Hx8fHx8fv7+/////////////////////////////////
+////////////////Dw8PAAAAAAAAHx8f////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAHx8fAAAAAAAAICAg////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+v7+/ICAgICAgv7+/////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////v7+/Hx8fHx8fv7+/////////
+////////////////////////////////////////Dw8PAAAAAAAAHx8f////////AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHx8fAAAAAAAAICAg////////AAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAv7+/ICAgICAgv7+/////////////////////////////////
+////////////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAA0ADMAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="UML::Package" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////////////////////////////////////////////////////////////AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAYGBg////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBg
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAA0ADMAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+			</Content>
+		</UMLProfile>
+		<UMLProfile profiletype="uml2">
+			<Documentation id="E4917CEA-F" name="Software Constraints" version="1.0" notes="Software Constraints"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="Constraint Toolbox" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="LGIT Model::SwConstraint(UML::Class)" type="" description="" unit="" values="" default="Software Constraint"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="LGIT Model::SwConstraint(UML::Class)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+v7+/Hx8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHx8fv7+/Dw8PAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHx8fAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+EBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQz8/Pz8/P
+EBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQz8/P////////z8/PEBAQ
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQz8/P////z8/Pz8/P////z8/PEBAQAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAf39/////z8/PDw8PDw8Pz8/P////z8/PEBAQAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAf39/Dw8PAAAAAAAADw8Pz8/P////z8/PEBAQAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw8Pz8/P////z8/PEBAQAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw8Pz8/Pn5+fAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAADw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHx8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAICAgv7+/ICAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAICAgv7+/XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAAxADEAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="LGIT Model::rationale(UML::Class)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////////////////////////AAAAAAAA////////////////////////////////////
+////////////////r6+vAAAAAAAAr6+v////////////////////////////////////////
+n5+fDw8PAAAAAAAAAAAAAAAADw8Pn5+f////////////////////////////X19fAAAAAAAA
+MDAwAAAAAAAAMDAwAAAAAAAAX19f////////////////////n5+fAAAAEBAQr6+v////AAAA
+AAAA////r6+vEBAQAAAAn5+f////////////////Dw8PAAAAr6+v////f39/AAAAAAAAf39/
+////r6+vAAAADw8P////////////r6+vAAAAMDAw////f39/AAAAAAAAAAAAAAAAf39/////
+Ly8vAAAAr6+v////AAAAAAAAAAAAAAAAAAAAAAAAAAAAz8/Pz8/PAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAz8/Pz8/PAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+////r6+vAAAALy8v////f39/AAAAAAAAAAAAAAAAf39/////Ly8vAAAAr6+v////////////
+Dw8PAAAAr6+v7+/vgICAAAAAAAAAgICA////r6+vAAAAEBAQ////////////////j4+PAAAA
+Dw8Pr6+v////AAAAAAAA////r6+vDw8PAAAAn5+f////////////////////X19fAAAAAAAA
+Ly8vAAAAAAAALy8vAAAAAAAAYGBg////////////////////////////j4+PEBAQAAAAAAAA
+AAAAAAAAEBAQn5+f////////////////////////////////////////r6+vAAAAAAAAsLCw
+////////////////////////////////////////////////////AAAAAAAA////////////
+////////////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAAxADEAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="LGIT Model::verification criteria(UML::Class)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////////
+////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAA////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////
+////////////////////////////////////////////////////////////////////AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAAxADEAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+			</Content>
+		</UMLProfile>
+		<UMLProfile profiletype="uml2">
+			<Documentation id="56607155-2" name="Software Context" version="1.0" notes="Software Context"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="Context ModelElements" alias="Context Items" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="LGIT Model::target system(UML::Node)" type="" description="" unit="" values="" default="Target System"/>
+							<Tag name="LGIT Model::subsystem(UML::Node)" type="" description="" unit="" values="" default="Subsystem"/>
+							<Tag name="LGIT Model::external system(UML::Node)" type="" description="" unit="" values="" default="External System"/>
+							<Tag name="LGIT Model::bus(UML::Node)" type="" description="" unit="" values="" default="Bus"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="Context Path Link" alias="Flow" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="LGIT Model::control path(UML::CommunicationPath)" type="" description="" unit="" values="" default="Control Path"/>
+							<Tag name="LGIT Model::data path(UML::CommunicationPath)" type="" description="" unit="" values="" default="Data Path"/>
+							<Tag name="LGIT Model::event path(UML::CommunicationPath)" type="" description="" unit="" values="" default="Event Path"/>
+							<Tag name="LGIT Model::power path(UML::CommunicationPath)" type="" description="" unit="" values="" default="Power Path"/>
+							<Tag name="LGIT Model::signal path(UML::CommunicationPath)" type="" description="" unit="" values="" default="Signal Path"/>
+						</TaggedValues>
+					</Stereotype>
+					<Stereotype name="LGIT Model::bus(UML::Node)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////Dw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAADw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Dw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQ////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAA0ADMAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+			</Content>
+		</UMLProfile>
+		<UMLProfile profiletype="uml2">
+			<Documentation id="C5520DBE-1" name="SW Requirement" version="1.0" notes="SW Requirement"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="LGIT Model::configuration parameter(UML::Requirement)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////AAAAAAAA////////////AAAAAAAA////////////AAAAAAAA////////////////
+AAAAAAAA////////////AAAAAAAA////////////AAAAAAAA////////////////AAAAAAAA
+////////////AAAAAAAA////////////AAAAAAAA////////////////AAAAAAAA////////
+Ly8vAAAAAAAALy8v////////AAAAAAAA////////////////AAAAAAAA////////AAAA////
+////AAAA////////AAAAAAAA////////////////AAAAAAAA////////AAAA////////AAAA
+////////AAAAAAAA////////////////AAAAAAAA////////Ly8vAAAAAAAAMDAw////////
+AAAAAAAA////////////////AAAAAAAA////////////AAAAAAAA////////////AAAAAAAA
+////////////////AAAAAAAA////////////AAAAAAAA////////////AAAAAAAA////////
+////Ly8vAAAAAAAALy8v////////AAAAAAAA////////Ly8vAAAAAAAALy8v////////AAAA
+////////AAAA////////AAAAAAAA////////AAAA////////AAAA////////AAAA////////
+AAAA////////AAAAAAAA////////AAAA////////AAAA////////Ly8vAAAAAAAAMDAw////
+////AAAAAAAA////////Ly8vAAAAAAAAMDAw////////////AAAAAAAA////////////AAAA
+AAAA////////////AAAAAAAA////////////////AAAAAAAA////////////AAAAAAAA////
+////////AAAAAAAA////////////////AAAAAAAA////////////AAAAAAAA////////////
+AAAAAAAA////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAAxADMAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+						<AppliesTo>
+							<Apply type="ToolboxItemImage"/>
+						</AppliesTo>
+					</Stereotype>
+					<Stereotype name="Software Requirement" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="LGIT Model::configuration parameter(UML::Requirement)" type="" description="" unit="" values="" default="Configuration"/>
+							<Tag name="LGIT Model::functional(UML::Requirement)" type="" description="" unit="" values="" default="Functional"/>
+							<Tag name="LGIT Model::non-functional(UML::Requirement)" type="" description="" unit="" values="" default="Non-functional"/>
+						</TaggedValues>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+			</Content>
+		</UMLProfile>
+		<UMLProfile profiletype="uml2">
+			<Documentation id="B147FC6E-0" name="SW States" version="1.0" notes="SW States"/>
+			<Content>
+				<Stereotypes>
+					<Stereotype name="State Machine" notes="State machine" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+						<AppliesTo>
+							<Apply type="ToolboxPage"/>
+						</AppliesTo>
+						<TaggedValues>
+							<Tag name="LGIT Model::SwChoice(UML::Choice)" type="" description="" unit="" values="" default="Choice"/>
+							<Tag name="LGIT Model::SwFinal(UML::FinalState)" type="" description="" unit="" values="" default="Final"/>
+							<Tag name="LGIT Model::SwInitial(UML::InitialState)" type="" description="" unit="" values="" default="Initial"/>
+							<Tag name="LGIT Model::SwState(UML::State)" type="" description="" unit="" values="" default="State"/>
+							<Tag name="LGIT Model::SwTerminate(UML::Terminate)" type="" description="" unit="" values="" default="Terminate"/>
+						</TaggedValues>
+					</Stereotype>
+				</Stereotypes>
+				<TaggedValueTypes/>
+			</Content>
+		</UMLProfile>
+	</UIToolboxes><ModelTemplates><Model name="Software Requirement Specification" description="LGIT Software SwRS Model." location="D:\ea_packages\SwRS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Architecture Design" description="LGIT Software Design Model." location="D:\ea_packages\SwDS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Test Specification" description="LGIT Software Test Model." location="D:\ea_packages\SwTS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Requirement Specification" description="LGIT Software SwRS Model." location="D:\ea_packages\SwRS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Architecture Design" description="LGIT Software Design Model." location="D:\ea_packages\SwDS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Test Specification" description="LGIT Software Test Model." location="D:\ea_packages\SwTS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Requirement Specification" description="LGIT Software SwRS Model." location="D:\ea_packages\SwRS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Architecture Design" description="LGIT Software Design Model." location="D:\ea_packages\SwDS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Test Specification" description="LGIT Software Test Model." location="D:\ea_packages\SwTS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Requirement Specification" description="LGIT Software SwRS Model." location="D:\ea_packages\SwRS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Architecture Design" description="LGIT Software Design Model." location="D:\ea_packages\SwDS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Test Specification" description="LGIT Software Test Model." location="D:\ea_packages\SwTS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Requirement Specification" description="LGIT Software SwRS Model." location="D:\ea_packages\SwRS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Architecture Design" description="LGIT Software Design Model." location="D:\ea_packages\SwDS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Test Specification" description="LGIT Software Test Model." location="D:\ea_packages\SwTS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Requirement Specification" description="LGIT Software SwRS Model." location="D:\ea_packages\SwRS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Architecture Design" description="LGIT Software Design Model." location="D:\ea_packages\SwDS Package Templates.xml" default="" icon="34" filter=""/><Model name="Software Test Specification" description="LGIT Software Test Model." location="D:\ea_packages\SwTS Package Templates.xml" default="" icon="34" filter=""/></ModelTemplates><LinkedDocumentTemplates><RefData version="1.0" exporter="EA.25">
+		</RefData></LinkedDocumentTemplates></MDG.Technology>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="56607155-2" name="Software Context" version="1.0" notes="Software Context"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Context ModelElements" alias="Context Items" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="LGIT Model::target system(UML::Node)" type="" description="" unit="" values="" default="Target System"/>
+					<Tag name="LGIT Model::subsystem(UML::Node)" type="" description="" unit="" values="" default="Subsystem"/>
+					<Tag name="LGIT Model::external system(UML::Node)" type="" description="" unit="" values="" default="External System"/>
+					<Tag name="LGIT Model::bus(UML::Node)" type="" description="" unit="" values="" default="Bus"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Context Path Link" alias="Flow" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="LGIT Model::control path(UML::CommunicationPath)" type="" description="" unit="" values="" default="Control Path"/>
+					<Tag name="LGIT Model::data path(UML::CommunicationPath)" type="" description="" unit="" values="" default="Data Path"/>
+					<Tag name="LGIT Model::event path(UML::CommunicationPath)" type="" description="" unit="" values="" default="Event Path"/>
+					<Tag name="LGIT Model::power path(UML::CommunicationPath)" type="" description="" unit="" values="" default="Power Path"/>
+					<Tag name="LGIT Model::signal path(UML::CommunicationPath)" type="" description="" unit="" values="" default="Signal Path"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="LGIT Model::bus(UML::Node)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////Dw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAADw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+Dw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQ////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAA0ADMAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+				<AppliesTo>
+					<Apply type="ToolboxItemImage"/>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>

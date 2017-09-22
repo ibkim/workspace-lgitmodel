@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="C5520DBE-1" name="SW Requirement" version="1.0" notes="SW Requirement"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="LGIT Model::configuration parameter(UML::Requirement)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////AAAAAAAA////////////AAAAAAAA////////////AAAAAAAA////////////////
+AAAAAAAA////////////AAAAAAAA////////////AAAAAAAA////////////////AAAAAAAA
+////////////AAAAAAAA////////////AAAAAAAA////////////////AAAAAAAA////////
+Ly8vAAAAAAAALy8v////////AAAAAAAA////////////////AAAAAAAA////////AAAA////
+////AAAA////////AAAAAAAA////////////////AAAAAAAA////////AAAA////////AAAA
+////////AAAAAAAA////////////////AAAAAAAA////////Ly8vAAAAAAAAMDAw////////
+AAAAAAAA////////////////AAAAAAAA////////////AAAAAAAA////////////AAAAAAAA
+////////////////AAAAAAAA////////////AAAAAAAA////////////AAAAAAAA////////
+////Ly8vAAAAAAAALy8v////////AAAAAAAA////////Ly8vAAAAAAAALy8v////////AAAA
+////////AAAA////////AAAAAAAA////////AAAA////////AAAA////////AAAA////////
+AAAA////////AAAAAAAA////////AAAA////////AAAA////////Ly8vAAAAAAAAMDAw////
+////AAAAAAAA////////Ly8vAAAAAAAAMDAw////////////AAAAAAAA////////////AAAA
+AAAA////////////AAAAAAAA////////////////AAAAAAAA////////////AAAAAAAA////
+////////AAAAAAAA////////////////AAAAAAAA////////////AAAAAAAA////////////
+AAAAAAAA////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAAxADMAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+				<AppliesTo>
+					<Apply type="ToolboxItemImage"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Software Requirement" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="LGIT Model::configuration parameter(UML::Requirement)" type="" description="" unit="" values="" default="Configuration"/>
+					<Tag name="LGIT Model::functional(UML::Requirement)" type="" description="" unit="" values="" default="Functional"/>
+					<Tag name="LGIT Model::non-functional(UML::Requirement)" type="" description="" unit="" values="" default="Non-functional"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>

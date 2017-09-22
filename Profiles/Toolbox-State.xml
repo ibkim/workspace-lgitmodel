@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="B147FC6E-0" name="SW States" version="1.0" notes="SW States"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="State Machine" notes="State machine" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="LGIT Model::SwChoice(UML::Choice)" type="" description="" unit="" values="" default="Choice"/>
+					<Tag name="LGIT Model::SwFinal(UML::FinalState)" type="" description="" unit="" values="" default="Final"/>
+					<Tag name="LGIT Model::SwInitial(UML::InitialState)" type="" description="" unit="" values="" default="Initial"/>
+					<Tag name="LGIT Model::SwState(UML::State)" type="" description="" unit="" values="" default="State"/>
+					<Tag name="LGIT Model::SwTerminate(UML::Terminate)" type="" description="" unit="" values="" default="Terminate"/>
+				</TaggedValues>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>

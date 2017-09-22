@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="E4917CEA-F" name="Software Constraints" version="1.0" notes="Software Constraints"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Constraint Toolbox" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="LGIT Model::SwConstraint(UML::Class)" type="" description="" unit="" values="" default="Software Constraint"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="LGIT Model::SwConstraint(UML::Class)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+v7+/Hx8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHx8fv7+/Dw8PAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHx8fAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+EBAQEBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQz8/Pz8/P
+EBAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQz8/P////////z8/PEBAQ
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAQz8/P////z8/Pz8/P////z8/PEBAQAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAf39/////z8/PDw8PDw8Pz8/P////z8/PEBAQAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAf39/Dw8PAAAAAAAADw8Pz8/P////z8/PEBAQAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw8Pz8/P////z8/PEBAQAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADw8Pz8/Pn5+fAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAADw8PAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHx8fAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAICAgv7+/ICAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAICAgv7+/XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAAxADEAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+				<AppliesTo>
+					<Apply type="ToolboxItemImage"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="LGIT Model::rationale(UML::Class)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////////////////////////AAAAAAAA////////////////////////////////////
+////////////////r6+vAAAAAAAAr6+v////////////////////////////////////////
+n5+fDw8PAAAAAAAAAAAAAAAADw8Pn5+f////////////////////////////X19fAAAAAAAA
+MDAwAAAAAAAAMDAwAAAAAAAAX19f////////////////////n5+fAAAAEBAQr6+v////AAAA
+AAAA////r6+vEBAQAAAAn5+f////////////////Dw8PAAAAr6+v////f39/AAAAAAAAf39/
+////r6+vAAAADw8P////////////r6+vAAAAMDAw////f39/AAAAAAAAAAAAAAAAf39/////
+Ly8vAAAAr6+v////AAAAAAAAAAAAAAAAAAAAAAAAAAAAz8/Pz8/PAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAz8/Pz8/PAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+////r6+vAAAALy8v////f39/AAAAAAAAAAAAAAAAf39/////Ly8vAAAAr6+v////////////
+Dw8PAAAAr6+v7+/vgICAAAAAAAAAgICA////r6+vAAAAEBAQ////////////////j4+PAAAA
+Dw8Pr6+v////AAAAAAAA////r6+vDw8PAAAAn5+f////////////////////X19fAAAAAAAA
+Ly8vAAAAAAAALy8vAAAAAAAAYGBg////////////////////////////j4+PEBAQAAAAAAAA
+AAAAAAAAEBAQn5+f////////////////////////////////////////r6+vAAAAAAAAsLCw
+////////////////////////////////////////////////////AAAAAAAA////////////
+////////////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAAxADEAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+				<AppliesTo>
+					<Apply type="ToolboxItemImage"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="LGIT Model::verification criteria(UML::Class)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////////////
+////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAA////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////
+////////////////////////////////////////////////////////////////////AAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////AAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAAxADEAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+				<AppliesTo>
+					<Apply type="ToolboxItemImage"/>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>

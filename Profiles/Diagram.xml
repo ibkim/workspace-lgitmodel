@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="73EDDF94-B" name="LGIT Model" version="1.0" notes="LGIT Model"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Requirements" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Logical">
+						<Property name="alias" value="SW Requirements"/>
+						<Property name="pdata" value="HideStereo=1;OpParams=1;SuppCN=1;ShowTags=0;HideParents=0;"/>
+						<Property name="toolbox" value="SW Requirement"/>
+						<Property name="styleex" value="SuppConnectorLabels=0;HideConnStereotype=0;AdvancedConnectorProps=1;HandDraw=0;Whiteboard=0;AdvancedFeatureProps=1;VisibleAttributeDetail=0;TExplicitNavigability=1;TConnectorNotation=UML 2.1;ShowNotes=0;"/>
+						<Property name="diagramID" value="Requirement"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Software Component" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_SwComponent">
+						<Property name="alias" value="Software Component"/>
+						<Property name="diagramID" value="SwComponent"/>
+						<Property name="pdata" value="OpParams=1;SuppCN=1;ShowTags=0;HideStereo=1;HideParents=0;"/>
+						<Property name="styleex" value="SuppConnectorLabels=0;HideConnStereotype=0;AdvancedConnectorProps=1;HandDraw=0;Whiteboard=0;VisibleAttributeDetail=0;TExplicitNavigability=1;TConnectorNotation=UML 2.1;ShowNotes=0;AdvancedFeatureProps=1;"/>
+						<Property name="toolbox" value="Software Component"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Software Constraints" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Component">
+						<Property name="pdata" value="OpParams=1;SuppCN=1;ShowTags=0;HideStereo=1;HideParents=0;"/>
+						<Property name="styleex" value="SuppConnectorLabels=0;HideConnStereotype=0;AdvancedConnectorProps=1;HandDraw=0;Whiteboard=0;VisibleAttributeDetail=0;TExplicitNavigability=1;TConnectorNotation=UML 2.1;ShowNotes=0;AdvancedFeatureProps=1;"/>
+						<Property name="alias" value="Software Constraints"/>
+						<Property name="diagramID" value="Constraints"/>
+						<Property name="toolbox" value="Software Constraints"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="Software Context" notes="Software Context Diagram" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_Component">
+						<Property name="pdata" value="OpParams=1;SuppCN=1;ShowTags=0;HideStereo=1;HideParents=0;"/>
+						<Property name="styleex" value="SuppConnectorLabels=0;HideConnStereotype=0;AdvancedConnectorProps=1;HandDraw=0;Whiteboard=0;TExplicitNavigability=1;TConnectorNotation=UML 2.1;ShowNotes=0;AdvancedFeatureProps=1;VisibleAttributeDetail=1;"/>
+						<Property name="alias" value="Software Context"/>
+						<Property name="diagramID" value="Context"/>
+						<Property name="toolbox" value="Software Context"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="States" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="Diagram_States">
+						<Property name="alias" value="Software States"/>
+						<Property name="diagramID" value="State Machine"/>
+						<Property name="pdata" value="OpParams=1;SuppCN=1;ShowTags=0;HideStereo=1;HideParents=0;"/>
+						<Property name="styleex" value="SuppConnectorLabels=0;HideConnStereotype=0;AdvancedConnectorProps=1;HandDraw=0;Whiteboard=0;TExplicitNavigability=1;TConnectorNotation=UML 2.1;ShowNotes=0;AdvancedFeatureProps=1;VisibleAttributeDetail=1;"/>
+						<Property name="toolbox" value="SW States"/>
+					</Apply>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>

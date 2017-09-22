@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<UMLProfile profiletype="uml2">
+	<Documentation id="B743E054-9" name="Software Component" version="1.0" notes="Software Component"/>
+	<Content>
+		<Stereotypes>
+			<Stereotype name="Component Elements" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+				<TaggedValues>
+					<Tag name="LGIT Model::SwComponent(UML::Class)" type="" description="" unit="" values="" default="Component"/>
+					<Tag name="LGIT Model::SwTask(UML::Class)" type="" description="" unit="" values="" default="Task"/>
+					<Tag name="UML::Package" type="" description="" unit="" values="" default="Package"/>
+				</TaggedValues>
+			</Stereotype>
+			<Stereotype name="Component Links" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<AppliesTo>
+					<Apply type="ToolboxPage"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="LGIT Model::SwComponent(UML::Class)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////////////////////j4+PHx8fj4+P////////////////////////////////////
+////////39/fPz8/QEBAAAAAQEBAPz8/39/f////////////////////////////////j4+P
+Hx8fkJCQ////AAAA////j4+PHx8fj4+P////////////////////39/fPz8/QEBA39/f////
+////AAAA////////39/fQEBAPz8/39/f////////j4+PHx8fkJCQ////////////////AAAA
+////////////////j4+PHx8fj4+P////AAAALy8v39/f////////39/fPz8/ICAgPz8/39/f
+////////39/fLy8vAAAA////AAAAj4+PHx8fj4+Pj4+PHx8fkJCQ////j4+PHx8fj4+Pj4+P
+Hx8fkJCQAAAA////AAAA////v7+/AAAAAAAAv7+/////////////v7+/AAAAAAAAv7+/////
+AAAA////AAAAj4+PHx8fkJCQj4+PHx8fj4+P////j4+PHx8fkJCQj4+PHx8fj4+PAAAA////
+AAAAMDAw39/f////////39/fQEBAHx8fQEBA39/f////////39/fMDAwAAAA////j4+PHx8f
+j4+P////////////////AAAA////////////////j4+PHx8fkJCQ////////39/fQEBAPz8/
+39/f////////AAAA////////39/fPz8/QEBA39/f////////////////////j4+PHx8fj4+P
+////AAAA////j4+PHx8fkJCQ////////////////////////////////39/fQEBAPz8/AAAA
+Pz8/QEBA39/f////////////////////////////////////////////j4+PICAgkJCQ////
+////////////////////////////////////////////////////////////////////////
+////////////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAA0ADMAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+				<AppliesTo>
+					<Apply type="ToolboxItemImage"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="LGIT Model::SwTask(UML::Class)" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+v7+/Hx8fHx8fv7+/////////////////////////////////////////////////Dw8PAAAA
+AAAAHx8f////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHx8fAAAAAAAAICAg
+////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAv7+/ICAgICAgv7+/////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////v7+/Hx8fHx8fv7+/////////////////////////////////
+////////////////Dw8PAAAAAAAAHx8f////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAHx8fAAAAAAAAICAg////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+v7+/ICAgICAgv7+/////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////v7+/Hx8fHx8fv7+/////////
+////////////////////////////////////////Dw8PAAAAAAAAHx8f////////AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHx8fAAAAAAAAICAg////////AAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAv7+/ICAgICAgv7+/////////////////////////////////
+////////////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAA0ADMAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+				<AppliesTo>
+					<Apply type="ToolboxItemImage"/>
+				</AppliesTo>
+			</Stereotype>
+			<Stereotype name="UML::Package" notes="" cx="0" cy="0" bgcolor="-1" fontcolor="-1" bordercolor="-1" borderwidth="-1" hideicon="0">
+				<Icon type="bitmap" xmlns:dt="urn:schemas-microsoft-com:datatypes" dt:dt="bin.base64">Qk02AwAAAAAAADYAAAAoAAAAEAAAABAAAAABABgAAAAAAAADAAASFwAAEhcAAAAAAAAAAAAA
+////////////////////////////////////////////////////////////////AAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAYGBg////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAYGBg
+////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////
+////////////////XwBJAEQAIAA9ACAAdABfAG8AYgBqAGUAYwB0AC4AUABhAGMAawBhAGcA
+ZQBfAEkARAAgACAAVwBoAGUAcgBlACAAIAB0AF8AbwBiAGoAZQBjAHQALgBQAGEAYwBrAGEA
+ZwBlAF8ASQBEACAASQBOACAAKAA0ADMAKQAgACAATwByAGQAZQByACAAYgB5ACAAdABfAG8A
+YgBqAGUAYwB0AC4AVABQAG8AcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AA==</Icon>
+				<AppliesTo>
+					<Apply type="ToolboxItemImage"/>
+				</AppliesTo>
+			</Stereotype>
+		</Stereotypes>
+		<TaggedValueTypes/>
+	</Content>
+</UMLProfile>
